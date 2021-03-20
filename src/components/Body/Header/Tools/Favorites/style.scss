@@ -1,0 +1,19 @@
+.Favorites {
+    position: relative;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+
+    .tool .icon {
+        color: #b64646;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .tool .icon:hover {
+        color: #f33838;
+    }
+    .tool .icon:active {
+        color: #ff9898;
+    }
+
+}

@@ -1,0 +1,23 @@
+@import '@/assets/css/colors.scss';
+
+.Header {
+    position: relative;
+    height: 50px;
+    background-color: #000;
+    top: 0px; right:0px; left:0px;
+    z-index: 10;
+}
+
+.Header .content {
+    position: relative;
+    margin: auto !important;
+    height: 40px;
+    padding: 5px 0px 5px 0px !important;
+    margin: auto;
+}
+
+.Header .search-mobile {
+    position: relative;
+    background-color: #000000;
+    padding: 10px;
+}

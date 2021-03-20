@@ -1,0 +1,32 @@
+.txt { 
+    font-size: 16px; 
+    color: #000; 
+    font-weight: normal;
+}
+.txt-bold { 
+    @extend .txt;
+    font-weight: bold;
+}
+
+
+.txt-small {
+    @extend .txt;
+    font-size: 12px;
+}
+.txt-small-bold {
+    @extend .txt-small;
+        font-weight: bold;
+}
+
+.h1 { font-size: 64px !important; }
+.h2 { font-size: 56px !important; }
+.h3 { font-size: 48px !important; }
+.h4 { font-size: 36px !important; }
+.h5 { font-size: 28px !important; }
+.h6 { font-size: 20px !important; }
+
+.txt-form-label {
+    @extend .txt;
+    font-size: 11px;
+}
+

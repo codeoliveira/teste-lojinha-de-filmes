@@ -1,0 +1,40 @@
+@import '@/assets/css/movies.scss';
+
+.MoviesGrid {
+    
+    .label {
+        position: absolute;
+        top: 0px;
+        margin: 25px 15px 15px 15px;
+        
+    }
+
+    .grid {
+        height: 48vh;
+        min-height: 300px;
+        margin-top: 0px;
+        background-color: #2c2c2c;
+    }
+
+    .grid .background {
+        @extend .grid;
+        background-image: url('./../../../public/img/backgrounds/game-of-thrones-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px) opacity(0.2);
+    }
+
+
+
+    .grid.mobile {
+        @extend .grid;
+    }
+
+    .grid.mobile .background {
+        @extend .grid;
+        margin-top: 55px;
+    }
+
+}
+

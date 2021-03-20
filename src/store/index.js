@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+import NS_search from './../components/Body/Header/Search/store';
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-  },
-  mutations: {
-  },
-  actions: {
+    http: Vue.prototype.$http
   },
   modules: {
+    NS_search
   }
 })
+
+
+

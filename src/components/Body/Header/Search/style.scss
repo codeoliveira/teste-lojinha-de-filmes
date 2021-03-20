@@ -1,0 +1,51 @@
+@import '@/assets/css/colors.scss';
+
+.Search {
+    display:grid;
+    
+    .form {
+        background-color: #646464;
+        border-width: 0px;
+        border-radius: 3px 3px 3px 3px;
+        height: 40px;
+    }
+
+    .input-search {
+        background-color: transparent;
+        border-width: 0px;
+        outline: none;
+        padding-left: 10px;
+        color: #ebebeb;
+        position: relative;
+        float: left;
+        line-height: 38px;
+        padding-right: 115px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .btn-search {
+        background-color: $primary;
+        border-radius: 0px 3px 3px 0px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .btn-search .icon {
+        position: relative;
+        float: left;
+        color: #333;
+        line-height: 26px;
+    }
+
+    .btn-search .label {
+        position: relative;
+        float: left;
+        color: #333;
+        line-height: 26px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+}

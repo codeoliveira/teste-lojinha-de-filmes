@@ -1,0 +1,37 @@
+@import '@/assets/css/colors.scss';
+
+.Logotipo {
+
+    position: relative;
+    float: left;
+    line-height: 40px;
+    font-size: 30px;
+
+    .icon {
+        @extend .Logotipo;
+        padding: 0px;
+        color: #cacaca;
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .nome {
+        @extend .Logotipo;
+        font-family: 'Roboto Black';
+        padding: 0px;
+        float: left;
+        // color: #ffe600;
+        color: $primary;
+        text-transform: uppercase;
+    }
+
+    .slogan {
+        @extend .Logotipo;
+        font-family: 'Roboto Light';
+        padding: 0px;
+        float: left;
+        color: #cacaca;
+        text-transform: uppercase;
+    }
+
+}

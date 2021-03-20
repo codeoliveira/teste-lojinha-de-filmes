@@ -1,0 +1,16 @@
+@import './colors.scss';
+
+.moviesLancamentos.title {
+    font-family: 'Roboto Black';
+    font-size: 16px;
+    color: $primary;
+    text-transform: uppercase;
+}
+
+.moviesLancamentos.subtitle {
+    font-family: 'Roboto Light';
+    font-size: 16px;
+    color: $secondary;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
