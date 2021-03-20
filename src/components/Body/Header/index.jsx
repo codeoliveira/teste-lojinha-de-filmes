@@ -8,7 +8,7 @@ import './style.scss';
 const Header = Vue.extend({
     render() {
         return (
-            <section>
+            <section class="fixed-top">
                 <div class="Header">
                     <div class="col-12 col-xl-10 p0 m0 content">
                         <div class="row p0 m0">
