@@ -3,10 +3,11 @@ import Vue from 'vue';
 import './style.scss';
 
 import MoviesGridController from './controller';
+import MoviesGridDAO from './data.dao';
 
 const MoviesGrid = Vue.extend({
 
-    mixins: [MoviesGridController],
+    mixins: [MoviesGridController, MoviesGridDAO],
 
 
     render() {
@@ -24,23 +25,24 @@ const MoviesGrid = Vue.extend({
                         <span class={`${this.args.subtitle.class}`}>{this.args.subtitle.label}</span>
                     </div>
 
-                    {this.buildMovieList()}
-
+                    <div class="movielist">
+                        {this.movieListHTML}
+                    </div>
 
                 </div>
 
                 { /** GRID FOR MOBILE */}
                 <div class="grid mobile col-12 m0 p0 d-lg-none">
-                    <div class="label">
-                        <div class={`${this.args.title.class}`}>{this.args.title.label}</div>
-                    </div>
+
                     <div class="background"></div>
                     <div class="label">
                         <span class={`${this.args.title.class}`}>{this.args.title.label}</span>
                         <span class={`${this.args.subtitle.class}`}>{this.args.subtitle.label}</span>
                     </div>
 
-                    {this.buildMovieList()}
+                    <div class="movielist">
+                        {this.movieListHTML}
+                    </div>
 
                 </div>
 
